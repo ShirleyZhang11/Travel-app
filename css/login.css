@@ -1,0 +1,57 @@
+.user_login{
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+.user_login .login_third{
+	padding: 50px 10px 0;
+	height: 250px;
+}
+.user_login .login_third .login_third_img{
+	text-align: center;	
+	width: 100%;
+	height: 200px;
+}
+.login_third .login_third_img a{
+	display: block;
+	background:url(../images/qqlogin.png) no-repeat;
+	background-size: contain;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+.login_title{
+	padding: 40px 10px 0;
+	height: 100px;
+	text-align: center;
+	line-height: 60px;
+}
+.login_title span{
+	display: inline-block;
+	width: 100%;
+    font-size: 20px;   
+}
+.login_form{
+	width: 100%;
+	padding: 10px 20px 10px;
+}
+.login_form .login_text{
+	width: 100%;
+	height: 50px;
+	background-color: #F2F2F2;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.login_btn{
+	width: 100%;
+	height: 50px;
+	background-color:#1dbf93; 
+	font-size: 30px;
+	color: #fff;
+}
+.user_login p{
+	position: absolute;
+	right: 10px;
+}

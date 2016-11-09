@@ -1,0 +1,398 @@
+body{
+	background-color: rgb(245,245,245);
+}
+.layout{
+    max-height: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+/*头部搜索部分*/
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;	
+	background-color: #fff;
+}
+
+.header .header-box{
+	height: 70px;
+	max-height:640px;
+	min-width: 300px;
+	position: relative;
+	margin: 0 auto;
+	/*background: lightblue;*/
+	padding-left: 60px;
+	padding-right: 50px;
+}
+.header-box .icon_logo{
+	background: url(../images/logo1.png) no-repeat;
+	background-size: contain;
+	display: block;
+	width: 50px;
+	height:40px;
+	position: absolute;
+	top:16px;
+	left: 5px;
+}
+/*头部搜索*/
+.header-box form{
+	width: 100%;
+	height: 70px;
+	padding-top:15px;
+	padding-left: 10px;
+
+}
+.header-box form input{
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	padding-left:35px;
+    background-color: #F4F4F4;
+}
+/*搜索按钮*/
+.header-box form .icon_search{
+	background: url(../images/search.png) no-repeat;
+	background-size: contain;	
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top:25px;
+	left: 80px;
+
+}
+.header_login{
+	background: url(../images/login.png) no-repeat;
+	background-size: contain;
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+
+}
+/*banner轮播图*/
+.banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 70px;
+	height: 300px;
+}
+.banner ul:first-child{
+	width: 500%;
+	height: 100%;
+}
+.banner ul:first-child li{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.banner ul:first-child li a img{
+	width: 100%;
+	height: 100%;
+}
+/*小圆圈*/
+.banner ul:last-child{
+	width: 60px;
+	height: 6px; 
+	background-color: rgba(240,230,230,0.8);
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -30px;
+	border-radius: 6px;
+}
+.banner ul:last-child li{
+	background-color:black;  /* #C9C8C9  active:#FF2F63*/
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	float: left;
+	margin-right: 6px;
+	margin-top: 1px;
+}
+.banner ul:last-child li:first-child{
+	margin-left: 6px;
+}
+/* banner*/
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > li {
+  float:left;
+  width:100%;
+  position: relative;
+}
+/*导航*/
+.nav{
+	width: 100%;
+	padding:0 10px;
+    background: #fff;
+}
+.nav ul{
+	width: 100%;
+	
+}
+.nav ul li{
+	margin-top: 10px;
+	width: 25%;
+	height: 68px;
+	float: left;
+	
+}
+.nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.nav ul li a img{
+	width: 40px;
+	height: 40px;
+	
+}
+.nav ul li a img p{
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+/*秒杀部分*/
+.product{
+	padding: 0 5px;
+}
+.seckill{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px 1px #e0e0e0;
+}
+.seckill .seckill-top{
+   width: 100%;
+   height: 35px;
+   margin-top: 8px;
+}
+/*时钟图片*/
+.seckill .seckill-top .icon_time{
+	background: url(../images/seckill-icon.png) no-repeat;
+	background-size: 16px 20px;
+	direction: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+/*标题*/
+.seckill .seckill-top p{
+	float: left;
+	line-height: 35px;
+	color: #d8505c;	
+}
+/*时钟数字*/
+.seckill .seckill-top .seckill_time{
+	float: left;
+	margin-top: 9px;
+	margin-left: 5px;
+}
+.seckill .seckill-top .seckill_time .num{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: #f8791c;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 15px;
+}
+/*右边更多*/
+.seckill .seckill-top .seckill_right{
+	float: right;
+	line-height: 35px;
+	margin-right: 5px;
+	font-size: 14px;
+}
+
+/*底部三个图片盒子*/
+.seckill-bottom{
+	width: 100%;
+}
+.seckill-bottom ul{
+	width: 100%;
+}
+/*每个盒子占据三分之一*/
+.seckill-bottom ul li{
+	float: left;
+	width: 33.333%;
+	/*图片和文字居中*/
+	text-align: center;
+}
+.seckill-bottom ul li .img_box{
+	width: 100%;
+	border-right: 1px solid #e0e0e0;
+
+}
+.seckill-bottom ul li .img_box img{
+	width: 64%;
+} 
+/*最后一个盒子没有有边框*/
+.seckill-bottom ul li:last-child .img_box{
+	border-right: none;
+}
+.seckill-bottom ul .new_price{
+	color: #d8505c;
+	font-size: 13px;
+}
+.seckill-bottom ul .new_price .old_price{
+	color: #666;
+	font-size: 13px;
+	margin-top: 5px;
+	text-decoration: line-through;
+}
+
+/*热门活动*/
+.product_box{
+	background: #fff;
+	box-shadow: 0 0 1px 1px #e0e0e0; 
+}
+.product_top{
+	width: 100%;
+	position: relative;
+	height: 35px;
+	border-bottom: 1px solid #e0e0e0;
+	margin-top: 10px;
+}
+.product_top p{
+	line-height: 35px;
+	margin-left: 20px;
+}
+/*标题前面的红色小盒子*/
+.product_top p:before{
+	content: '';
+	width: 3px;
+	height: 12px;
+	background-color: #d8505c;
+	display: block;
+	position: absolute;
+	top:10px;
+	left: 15px;
+}
+
+.p_left{
+	width: 50%;
+	float: left;
+}
+.p_right{
+	width: 50%;
+	float: right;
+}
+
+.product_bottom a img{
+	width: 100%;
+}
+/*图片加分割线*/
+.b_top{
+	border-top: 1px solid #e0e0e0;
+}
+.b_right{
+	border-right: 1px solid #e0e0e0;
+}
+.b_left{
+	border-left: 1px solid #e0e0e0;
+}
+.b_bottom{
+	border-bottom: 1px solid #e0e0e0;
+}
+
+/*更多精彩*/
+
+.pflist_a{
+	width: 100%;
+	/*height: 200px;*/
+	border-bottom: 1px solid #666;
+	padding:10px 0 ;
+	box-shadow: 0 0 1px 1px #e0e0e0; 
+}
+.pflist{
+	padding-bottom: 10px;
+}
+.pflist,.pflist_p{
+	width: 100%;
+	height: 100%;	
+}
+.pflist .pfimg{
+	width: 100%;
+	min-height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+.pflist .pfimg img{
+	min-height: 100px;
+	display: block;
+}
+.pflist .pfimg .pfimg_p{
+   position: absolute;
+   right: 0;
+   bottom: 10px;
+   text-align: center;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.pflist .pfimg .pfimg_p p{
+	background-color: #ff720e;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+.pflist_p{
+	padding-top: 10px;
+	height: 50px;
+}
+.pflist_p p{
+	padding-left: 20px;
+}
+.pflist_p .pflist_p_des{
+	font-size: 18px;
+	color: #000;
+
+}
+
+/*底部*/
+footer{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+}
+footer ul{
+	width: 100%;
+
+}
+footer ul li{
+    float: left;
+    width: 33.33%;
+	 background-color: rgba(255,255,255,0.5);
+	
+}
+footer ul li a{
+	background-color: #8a72e1;
+	width: 50%;
+	display: block;
+	border-radius: 50px;
+	margin-left: 20%;
+}
+footer ul li a p{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	
+}
